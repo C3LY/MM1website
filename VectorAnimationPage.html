@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vector Animation</title>
+    <link rel="stylesheet" href="css/main.css" media="screen">
+</head>
+<body>
+<header>
+    <h1>Animation</h1>
+</header>
+<nav>
+    <ul>
+        <li><a href="Home.html" onmouseover="playsound()">Home</a></li>
+        <li><a href="VideoGreetingsPage.html" onmouseover="playsound()">Video Greetings</a></li>
+        <li><a href="Hobbies.html" onmouseover="playsound()">Hobbies</a></li>
+        <li>
+            <div class="dropdown">
+                <button class="dropbtn" onmouseover="playsound()">Coursework</button>
+                <div class="dropdown-content">
+                    <a href="Labs%20work/lab3Webpage2/Webpage.html" onmouseover="playsound()">Webpage</a>
+                    <a href="Labs%20work/Lab4/Bounce/Bounce.html" onmouseover="playsound()">Animation</a>
+                    <a href="CourseworkPage.html" onmouseover="playsound()">Downloads</a>
+                </div>
+            </div>
+        </li>
+        <li><a href="VectorAnimationPage.html" onmouseover="playsound()" class="active">Vector Animation</a></li>
+        <li><a href="Slideshow.html" onmouseover="playsound()">Slideshow</a></li>
+        <li><a href="Extra.html" onmouseover="playsound()">Extra</a></li>
+    </ul>
+</nav>
+<audio id="rollsound">
+    <source src="rollsound.mp3" type="audio/mp3">
+</audio>
+<script>
+    var audio = document.getElementById("rollsound");
+
+    function playsound() {
+        audio.play();
+    }
+
+</script>
+<script src="VectorAnimation/VectorAnimation.js" type="text/javascript"></script>
+<script src="VectorAnimation/raphael.min.js" type="text/javascript"></script>
+
+</head>
+
+<div id="canvas"></div>
+
+
+<!--<audio id="audiofile" controls>-->
+<!--<source src="VPT_Intro.mp3" type="audio/mp3">-->
+<!--Your browser does not support the audio element.-->
+<!--</audio>-->
+
+
+<button id="play" onclick="StartAnimation()" ;>Start Animation</button>
+<!-- duplicate button and load new button when animation stopeed and dispaly:none this button when stopped-->
+<button style="display:none;" id="reset" onclick="ResetAnimation()" ;>Reset Animation</button>
+<button id="stop" onclick="StopAnimation()" ;>Stop Animation</button>
+<button style="display:none;" id="resume" onclick="ResumeAnimation()" ;>Resume Animation</button>
+<button id="volumedown">Volume Down</button>
+<button id="volumeup">Volume Up</button>
+<button id="mute">Mute</button>
+<button style="display: none;" id="unmute">Unmute</button>
+<button id="duration">duration</button>
+
+<!--<input type="button" id="stop" value="Stop Animation">-->
+<!-- <button id="play" onclick="stop_Animation()";>Stop</button> this doesn't work??!!)-->
+
+</main>
+<footer>
+    <script src="switchableCSS.js" type="text/javascript"></script>
+    <a href="#" onclick="changeCSS('css/main.css', 0);">Main Style</a>
+    <a href="#" onclick="changeCSS('css/altmain.css', 0);">Crazy Style</a>
+    <p>Created Oct-Nov 2018</p></footer>
+</body>
+</html>

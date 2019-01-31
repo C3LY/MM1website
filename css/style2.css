@@ -1,0 +1,188 @@
+*{
+    font-family: "Telugu MN", Impact, sans-serif;
+}
+
+header{
+    padding: 10px;
+    text-align: left;
+}
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #0c5460;
+}
+
+
+body{
+    margin: 0;
+    background-color: #d1eaff;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#header {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0c5460;
+}
+
+footer {
+    border: 1px solid deepskyblue;
+    padding: 20px;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    background: #003c82;
+    margin-top: 84px;
+    flex-shrink: 0;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003c82;
+}
+
+nav ul li {float: left;}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: #0c5460;
+    color: white;
+}
+
+.active {
+    background-color:#2f6f9f;
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: repeat(1, 450px);
+    grid-gap: 20px;
+    margin-top: 44px;
+    grid-auto-rows: 500px;
+    justify-items: center;
+    flex: 1 0 auto;
+}
+
+h2 {
+
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #ffa500;
+    padding: 10px 0px 10px 10px;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.document {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.5);
+    width: 250px;
+    height: 450px;
+    display:inline-block;
+    position: relative;
+    padding: 10px;
+    margin-left: 20%;
+}
+
+
+.description {
+
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.29;
+    letter-spacing: 0.1px;
+    text-align: left;
+    color: #4a4a4a;
+    padding: 10px 0px 10px 10px;
+    border-top: 1px solid #4a4a4a;
+}
+
+
+.container {
+    min-width: 500px;
+    margin: auto;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #2f6f9f;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #0c5460;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #003c82;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #005cbf;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+footer a{
+    color: white;
+}

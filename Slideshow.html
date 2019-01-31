@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slideshow</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        * {box-sizing: border-box}
+        body {font-family: Verdana, sans-serif; margin:0}
+        .slides {display: none}
+        img {vertical-align: middle;}
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+        @media only screen and (max-width: 300px) {
+            .prev, .next,.text {font-size: 11px}
+        }
+    </style>
+</head>
+<body>
+<h1>Slideshow</h1>
+<nav>
+    <ul>
+        <li><a href="Home.html" onmouseover="playsound()" >Home</a></li>
+        <li><a href="VideoGreetingsPage.html" onmouseover="playsound()" >Video Greetings</a></li>
+        <li><a href="Hobbies.html" onmouseover="playsound()" >Hobbies</a></li>
+        <li><div class="dropdown">
+            <button class="dropbtn" onmouseover="playsound()">Coursework</button>
+            <div class="dropdown-content">
+                <a href="Labs%20work/lab3Webpage2/Webpage.html" onmouseover="playsound()">Webpage</a>
+                <a href="Labs%20work/Lab4/Bounce/Bounce.html" onmouseover="playsound()" >Animation</a>
+                <a href="CourseworkPage.html" onmouseover="playsound()" >Downloads</a>
+            </div>
+        </div>
+        </li>
+        <li><a href="VectorAnimationPage.html" onmouseover="playsound()" >Vector Animation</a></li>
+        <li><a href="Slideshow.html" onmouseover="playsound()" >Slideshow</a></li>
+        <li><a href="Extra.html" onmouseover="playsound()" class="active" >Extra</a></li>
+    </ul>
+</nav>
+<audio id="rollsound"><source src="rollsound.mp3" type="audio/mp3"></audio>
+<script>
+    var audio = document.getElementById("rollsound");
+    function playsound(){
+        audio.play();
+    }
+
+</script>
+<div class="slideshow-container">
+
+    <div class="slides fade">
+        <div class="numbertext">1 / 13</div>
+        <img src="Photos/1.jpg" style="width:100%">
+        <div class="text"> Tarantula Nebula</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">2 / 13</div>
+        <img src="Photos/2.jpg" style="width:100%">
+        <div class="text">Orion Nebula</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">3 / 12</div>
+        <img src="Photos/3.jpg" style="width:100%">
+        <div class="text">Star Clusters</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">4 / 12</div>
+        <img src="Photos/4.jpg" style="width:100%">
+        <div class="text">Retina-fog</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">5 / 12</div>
+        <img src="Photos/5.jpg" style="width:100%">
+        <div class="text">Eagle Nebula</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">6 / 12</div>
+        <img src="Photos/6.jpg" style="width:100%">
+        <div class="text">Eagle Nebula</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">7 / 12</div>
+        <img src="Photos/7.jpg" style="width:100%">
+        <div class="text">Omega Nebula</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">8 / 12</div>
+        <img src="Photos/8.jpg" style="width:100%">
+        <div class="text">Lagoon Nebula</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">9 / 12</div>
+        <img src="Photos/9.jpg" style="width:100%">
+        <div class="text">Andromeda</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">10 / 12</div>
+        <img src="Photos/10.jpg" style="width:100%">
+        <div class="text">Space</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">11 / 12</div>
+        <img src="Photos/11.jpg" style="width:100%">
+        <div class="text">Solar System</div>
+    </div>
+
+    <div class="slides fade">
+        <div class="numbertext">12 / 12</div>
+        <img src="Photos/12.jpg" style="width:100%">
+        <div class="text">Cosmos</div>
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+    }
+</script>
+
+<footer>
+    <script src="switchableCSS.js" type="text/javascript"></script>
+    <a href="#" onclick="changeCSS('css/main.css', 0);">Main Style</a>
+    <a href="#" onclick="changeCSS('css/altmain.css', 0);">Crazy Style</a>
+    <p>Created Oct-Nov 2018</p>
+</footer>
+</body>
+</html>
